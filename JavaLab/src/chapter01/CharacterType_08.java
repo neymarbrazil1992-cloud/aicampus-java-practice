@@ -1,0 +1,25 @@
+package chapter01;
+
+public class CharacterType_08 {
+    public static void main(String[] args) {
+        //Character(문자) Type(char)
+        //Java, C# -> 2byte(16bit) -> UTF-16
+        //C, C++ -> 1byte(8bit) -> UTF-8
+
+        char ch1='한';
+        char ch2='\uD55c';
+
+        System.out.println("ch1:"+ch1);
+        System.out.println("ch2:"+ch2);
+
+        char strl='A'; //단일문자 
+        System.out.println("strl1:"+strl);
+
+        //객체 
+        String str2="Hello Java";
+        System.out.println("str2:"+str2);
+
+        String str3="W";
+        System.out.println("str3:"+str3);
+    }
+}
