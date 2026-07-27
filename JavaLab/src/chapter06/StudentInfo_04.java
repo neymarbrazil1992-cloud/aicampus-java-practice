@@ -10,7 +10,7 @@ public class StudentInfo_04 {
     String address;
 
     
-    //기본적으로 열어놓는게 편리 
+    //기본적으로 생성자를  열어놓는게 편리 
     public StudentInfo_04() {
 
     }
@@ -25,9 +25,30 @@ public class StudentInfo_04 {
         this.studentname = studentname;
         this.grade = grade;
         this.address = address;
-    }
+    
+    }//
+    
+
 
     
+
+    
+
+    public String getStudentname() {
+        return studentname;
+    }
+
+     
+
+
+    public void setStudentname(String studentname) {
+        this.studentname = studentname;
+    }
+
+
+
+   
+
     
 
     

@@ -27,6 +27,7 @@ public class TeamMember_03 {
     
     
     
+    
     //Setter(저장하기) & Getter(가져오기) 
     public String getTeamName() { //'X'팀명을 데이터 베이스 -> Getter
         return teamName;
