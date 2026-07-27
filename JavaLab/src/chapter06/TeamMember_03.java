@@ -8,8 +8,23 @@ public class TeamMember_03 {
     public String mName; // 팀장
     public String mPhone; //팀장 전화번호
     public String sName; //부팀장
-    public String name; //팀원명
-    public String gender; //팀원 성별 
+    public String name; //팀원명(안동주)
+    public String gender; //팀원 성별(남)
+    
+   
+   //생성자 (디폴트 생성자)
+
+   public TeamMember_03() {
+
+   }
+   
+    //생성자 Overload
+    public TeamMember_03(String name, String gender) {
+        this.name=name;
+        this.gender=gender;
+    }
+    
+    
     
     
     //Setter(저장하기) & Getter(가져오기) 
