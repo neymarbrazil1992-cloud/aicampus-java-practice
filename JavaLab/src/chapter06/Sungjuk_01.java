@@ -34,14 +34,21 @@ public static void main(String[] args) {
     //객체 만들기
     Sungjuk_01 rec = new Sungjuk_01();
 
+    rec.std_num = JOptionPane.showInputDialog("학번을 입력하세요: ");
+    rec.std_name = JOptionPane.showInputDialog("이름을 입력하세요: ");
+
     rec.java = Integer.parseInt(JOptionPane.showInputDialog("자바점수"));
     rec.oracle = Integer.parseInt(JOptionPane.showInputDialog("오라클 점수"));
     rec.spring = Integer.parseInt(JOptionPane.showInputDialog("스프링 점수"));
+
+    System.out.println("학번-"+rec.std_num+"|성명-"+rec.std_name+"님| 의 성적입니다.");
+    System.out.println("------------------------");
 
     rec.Sum();
     rec.Avg();
 
 }//main
+
 
 
 }//class
