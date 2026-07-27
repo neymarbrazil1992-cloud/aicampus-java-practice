@@ -19,7 +19,7 @@ public class Array02 {
 
             System.out.println("이름: "+student[i]+"전화번호: "+phone[i]);
 
-
+         
         }//for
 
 
