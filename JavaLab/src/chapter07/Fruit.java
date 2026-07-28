@@ -21,7 +21,7 @@ public class Fruit {
 
 
     //초기화 메서드
-    public void Set(String a, String b) {
+    public void Set1(String a, String b) {
         sort=a;
         season=b;
     }
