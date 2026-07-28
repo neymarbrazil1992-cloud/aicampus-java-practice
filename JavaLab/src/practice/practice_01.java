@@ -35,7 +35,7 @@ public class practice_01 {
         // }//while
         System.out.println("");
        
-    sys
+    
    
    
    

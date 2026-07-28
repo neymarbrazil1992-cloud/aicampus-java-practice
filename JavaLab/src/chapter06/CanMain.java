@@ -26,6 +26,15 @@ public class CanMain {
         System.out.println("음료를 선택하세요.");
         String select = scan.nextLine();
         ven.outCan(select);
+
+        while (money > 0) {
+
+            ven.showCans(money);
+        System.out.println("----------------");
+
+
+            
+        }
         
 
 

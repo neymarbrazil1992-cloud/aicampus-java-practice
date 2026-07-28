@@ -16,7 +16,7 @@ public class Vending {
 
     }
 
-
+    
 
     //메서드
     public void init() {
@@ -38,6 +38,7 @@ public class Vending {
                 
             }//if
         }//for
+
 
 
     }//showcans
