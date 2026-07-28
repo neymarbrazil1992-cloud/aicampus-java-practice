@@ -13,6 +13,11 @@ public class student_05 {
         // studentID = 10001; - > final 이기 때문에 안됨
         studentName="a";
     }
+    public student_05() {
+        this studentID = nextID++;
+    }
+
+    
 
    
    
@@ -52,11 +57,34 @@ public class student_05 {
     public student_05(String studentName, String address) {
         this.studentName = studentName;
         this.address = address;
+        
     }
+
+    
+
+    
+
+
+
+
+    public student_05(String studentName, int grade, String address) {
+        this.studentName = studentName;
+        this.grade = grade;
+        this.address = address;
+    }
+
+    public void showDetailedStuInfo() {
+        System.out.println("Name: " + studentName +"Grade: " + grade + "Address: " + address);
+    }
+
+
+
 
     public void showStudentInfo() {
         System.out.println(studentName + ", " + address);
     }
+
+    
 
     
     

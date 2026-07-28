@@ -1,15 +1,18 @@
 package chapter06;
 
-public class StudentMain {
+public class ReviewStudentMain {
     public static void main(String[] args) {
         
-      //기본 생성자를 이용한 student 1 객체 생성
+        //기본 생성자를 이용한 student 1 객체 생성
         student_05 student1 = new student_05();
       //멤버 변수에 이름 주소를 입력하고 
         student1.studentName="진광채";
         student1.address="답십리동";
       //출력(showStudentInfo)
         student1.showStudentInfo();
+
+        ReviewStudent_05 student10 = new ReviewStudent_05();
+        
 
        //-------------------------------
        System.out.println();
@@ -33,5 +36,6 @@ public class StudentMain {
        //출력(showStudentInfo)
 
 
-    }//main
-}//class
+
+    }
+}
