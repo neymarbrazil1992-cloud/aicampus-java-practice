@@ -33,6 +33,7 @@ public class Can_07 {
 
     public int getPrice() {
         return price;
+        
     }
 
     
