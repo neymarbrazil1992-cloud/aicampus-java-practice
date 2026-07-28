@@ -16,7 +16,7 @@ public class Vending {
 
     }
 
-    
+
 
     //메서드
     public void init() {
@@ -47,16 +47,23 @@ public class Vending {
 
     public void outCan(String name) {
 
+        boolean found = false;
         for(int i=0; i<can.length; i++) {
             //만약에 내가 선택한 음료의 이름이 자판기 음료의 이름과 같으면 음료 출력(예: 선택하신 바나나우유를 출력합니다.)
             if (name.equals(can[i].getCanName())) {
                 System.out.println("선택하신" + can[i].getCanName()+ "를(을) 출력합니다.");
                 System.out.println("잔액" +(money - can[i].getPrice() + "원 입니다."));
-            } 
+                found = true;
+                break; //for문 탈출 
+            
+            }//if 
+
 
         }//for
-
-        System.out.println("잘못 주문 하셨습니다.");
+        if (!found) {
+            System.out.println("잘못 주문 하셨습니다.");    
+        }
+        
 
     }//outcan
 

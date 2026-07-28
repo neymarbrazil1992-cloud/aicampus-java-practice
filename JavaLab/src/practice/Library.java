@@ -20,7 +20,9 @@ public class Library {
         books[4] = new Book_01("삼국지", 4);
              
     }
-
+    /*
+    for 문은 "똑같은 동작을 정해진 횟수만큼 반복해야 할 때"쓰는 것이다. 오늘 코드에서 books.length만큼 배열을 순회하는게 정확히 그 상황이었고, i < books.length로 인해 인덱스로 범위를 지키는게 핵심git 
+    */
     public void showBooks(int m) {
         for (int i = 0; i<books.length ; i++) {
             if (books[i].getStock()>0) {

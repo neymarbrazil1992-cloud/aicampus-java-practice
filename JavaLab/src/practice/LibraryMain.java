@@ -24,6 +24,9 @@ public class LibraryMain {
             lib.rentBook(select);
             System.out.println();
 
+            
+
+        
         }//while
 
     }//main
