@@ -13,7 +13,8 @@ public class game16 {
         //->   Character characters1 = new Warrior();
         //     Character characters2 = new Mage();
 
-        For (Character c : characters) {
+        
+        for (Character c : characters) {
             System.out.println(c.getClass().getSimpleName()+" 공격력 : "+c.attack(power));
         }
 

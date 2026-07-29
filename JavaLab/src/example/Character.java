@@ -32,20 +32,24 @@ public class Character {
 	 * 클래스 이름은 getClass().getSimpleName()으로 출력한다.
 	 */
     
-    private String Warrior;
-	private String Mage;
+    // private String Warrior;
+	// private String Mage;
 	
-	public Character(String warrior, String mage) {
-		Warrior = warrior;
-		Mage = mage;
-	}
+	// public Character(String warrior, String mage) {
+	// 	Warrior = warrior;
+	// 	Mage = mage;
+	// }
 
-	int power;
-	public int attack() {
+	// int power;
+	// public int attack() {
+	// 	return -1;
+	// }
+
+	// Character String Warrior = attack();
+
+	public int attack(int power) {
 		return -1;
 	}
-
-	Character String Warrior = attack();
 
 	
 
