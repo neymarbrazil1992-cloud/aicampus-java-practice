@@ -15,7 +15,7 @@ public class Employee {
     }
 
     public void getInfo() {
-        System.out.println("이름: " + ", 연봉: " + salary + "만원");
+        System.out.println("이름: " + name + ", 연봉: " + salary + "만원");
     }
 
     
