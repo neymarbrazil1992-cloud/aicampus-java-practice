@@ -1,0 +1,24 @@
+package chapter07;
+
+public class Employee {
+    
+    String name;
+    int salary;
+    
+    public Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void work() {
+        System.out.println(name + "직원이 일하고 있습니다.");
+    }
+
+    public void getInfo() {
+        System.out.println("이름: " + ", 연봉: " + salary + "만원");
+    }
+
+    
+
+
+}//class
