@@ -19,8 +19,8 @@ public class Inheri_15 {
 	// CalPlus : 30
 	// CalMinus : 10
     
-    int n1 = 20;
-    int n2 = 10;
+    int n1;
+    int n2;
    
     public Inheri_15() {
 
