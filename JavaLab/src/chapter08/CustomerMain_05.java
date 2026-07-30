@@ -23,8 +23,8 @@ public class CustomerMain_05 {
 
     //instance_of 
     //seller 부모 | Customer 자식 
-    if (seller instanceof Customer) {
-        Customer customer2 = (Customer)seller; //다운캐스팅 
+    if (seller instanceof Customer) { //if() <- 안이 에러 없이 정상 작동 하면 'true' instanceof 다운캐스팅이 잘 되는 조건에 있는거다.
+        Customer customer2 = (Customer)seller; //다운캐스팅 -> "다운 캐스팅 전에 반드시 instanceof 로 먼저 확인하는게 정석"
         customer2.buy();
         customer2.sell();
         customer2.order();
