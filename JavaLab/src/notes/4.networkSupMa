@@ -1,0 +1,7 @@
+RAID ????
+"여러개의 하드디스크를 묶어 하나로 사용하는 기술"
+-0: Striping - one by one -> frequent Error
+-1: Mirroring - expensive 
+-3: 해밍코드? (3번으로 가기전에 2번) -w. Parity(3 or 5)
+-4: 실패 개발중
+-5: Parity 회전방식 - 최신형 : 지금까지 쓰고 있다 

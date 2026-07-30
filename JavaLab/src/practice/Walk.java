@@ -1,10 +1,10 @@
 package practice;
 
-public class Car extends Delivery {
+public class Walk extends Delivery {
+
     @Override
     public int calcFee (int distance) {
-        return distance * 500 +2000;
+        return distance * 200;
     }
-
     
 }

@@ -1,0 +1,55 @@
+패킷 교환망 특징 
+패킷 가변길이(공백이 생길수 있는 상태 )를 갖는다.
+단편화 -> affects on speed slower after time 
+범람? (전송량을 제어) -> overflow 방지 기능도 있다
+
+Network Form(Topology)
+(Nod & Device - Linked) -> how it formed : Topology
+[]---X-----[X] -> Bus Form : Convinient Most used, cheap
+     |  | |
+    (O)(X)(X)
+
+
+
+OSI 7 Layer & TCP/IP 4 Layer 
+Application   |
+Presentation  | => Data //압축출고 전송
+Session       |
+Transport
+Network - 라우터
+Data Link - Frame -BridgeSwitch[Lan Card] - 맥주소?- noch sehr langsam  
+Physical -switch - Bit "리피터 허브"?: 신호를 연장해주는 장비(단순)   
+=> Outdated way of transporting Data
+
+Application
+Transport
+Internet - !!makes everything faster 
+Network
+
+"Protocol" 을 지켜라 
+http    telnet   smtp       etp     dns*     tftp  snmp dhcp
+80(호수)        (simplemail)        
+
+DNS* - 숫자가 어려우니깐 글자로 바꿨다? 
+     - dns.google : 8.8.8.8 -> google.com (가시성을 높이기 위해 ?)
+TCP* UDP(실시간 데이터 전송: 중간에 손실이 많다) HYBRID
+ICMP IGMP IP ARP RARP IPX
+Ethernet MAc PPP 무선랜 Modem     
+
+TCP* - > 3번을 점검 for security reason <-> RST
+
+IEEE 802 - Bus -> Ring
+
+회선 연결 링크 설정 데이터 전송 링크 해제 회선 해제
+
+신호 변환 방식 - 주파수 대역폭?을 갖는 신호를 생성하는 과정 
+아날로그 변조 - mit Wave 
+디지털 변조 - Block wave? more accurate
+PCM 펄스 코드 변조 : 아날로그 표본화 양자화 부호화 디지털 신호 
+
+Automatic Repeat (1)Stop & Wait (2) go back 
+
+멀티 플렉싱 (다중화 기법)
+
+
+

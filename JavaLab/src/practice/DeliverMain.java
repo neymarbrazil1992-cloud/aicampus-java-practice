@@ -10,13 +10,13 @@ public static void main(String[] args) {
     System.out.println("주행거리를 입력하시오: ");
     int distance = km.nextInt();
 
-    Delivery[] vehicDeliveries = {new Car(),new Bike()}; 
+    Delivery[] vehicDeliveries = {new Car(),new Bike(),new Motocycle(),new Walk()7}; 
 
    
         
     
     for (Delivery v : vehicDeliveries) {
-            System.out.println(v.getClass().getSimpleName()+" 주행거리(km) :"+v.calcFee(distance));
+            System.out.println(v.getClass().getSimpleName()+" 배달비 :"+v.calcFee(distance));
     }
 
 

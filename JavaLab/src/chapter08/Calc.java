@@ -3,6 +3,8 @@ package chapter08;
 public interface Calc {
 
     //public "interface" -> "설계도 "
+    //Cal "변수'-> "Calc규칙을 지키는 뭔가"로만 다룬다.
+    //
     
    
    //멤버 변수 
