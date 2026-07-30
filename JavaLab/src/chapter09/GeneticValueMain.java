@@ -16,6 +16,7 @@ public class GeneticValueMain {
         GeneticValue<Integer> v3 = new GeneticValue<>();
         v3.setValue(100);
         System.out.println(v3.getValue());
+        
         // Double
         GeneticValue<Double> v4 = new GeneticValue<>();
         v4.setValue(99.99);
