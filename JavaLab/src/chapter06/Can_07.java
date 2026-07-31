@@ -21,6 +21,8 @@ public class Can_07 {
         this.price=price;
     }
 
+    
+
     //기본 생성자 
     public Can_07(){
         

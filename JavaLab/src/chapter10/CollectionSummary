@@ -18,3 +18,25 @@ Map
  ├── Hashtable
  └── SortedMap
       └── TreeMap
+
+for (int=0; i<list.size();i++) {
+     system.out.println(list.get(i));
+} ->ArrayList전용
+
+Iterator<Integer> it = list.iterator();
+while (it.hasNext()) {
+     system.out.println(it.next());
+} -> 거의 모든 컬렉션에 범용적으로 쓸 수 있음
+
+for (int=0; i<list.size();i++) {
+     if(list.get(i) % 2 == 0) { --->바깔에서 리스트만 건드림 
+          list.remove           ---? i 는 리스트가 줄어든 걸 모름 건너뜀 
+
+     }
+}
+while (it.hasNext()) {
+     system.out.println(it.next());
+     if (v % 2 == 0){
+          it.remove(); -> 커서 자신이 방금 꺼낸 요소를 지움
+     }
+}
