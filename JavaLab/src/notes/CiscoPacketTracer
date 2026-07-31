@@ -1,0 +1,9 @@
+NetWork Practice w. CiscoPacketTracer
+1.기본 배경지식 :
+    IP주소: 255까지 
+    서브넷 마스크 ? A class(255), B class, C Class.
+    Bit 신호를 주는 순간 MAC Ip 와 만난다- 6 digits
+
+2. 활용 
+라우터의 f0/0 포트에 ip 주소를 설정해서 네트워크 활성화를 할수 있다
+IP설정 -> 포트 활성화 -> (모드에서 착각할수도 있음) -> 통신 성공

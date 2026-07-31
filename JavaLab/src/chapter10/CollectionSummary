@@ -1,0 +1,20 @@
+
+Collection(자바2-기능) : Generic
+ | 
+(상속)
+ ├── List(부모):가 앞에옴            List<String>student = new ArrayList
+ │    ├── ArrayList(!!일반적)
+ │    ├── LinkedList ->Linked 배열 알고리즘 : 단순 반복 작업에 빠름
+ │    ├── Stack
+ │    └── Vector
+ │
+ └── Set(부모)
+      ├── HashSet-중복 점검
+      └── SortedSet(정렬)-내림차순 오름차순
+           └── TreeSet
+
+Map
+ ├── HashMap
+ ├── Hashtable
+ └── SortedMap
+      └── TreeMap

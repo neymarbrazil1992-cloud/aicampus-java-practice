@@ -1,0 +1,25 @@
+1. 소프트웨어 공학 개요 
+-비 가시성 
+-위기는 "유지 보수 어려움"에서 비롯됨 
+
+2. 개발 방법론 
+-객체 중심 
+-a.Structured - Data flow Diagram 데이터 이동을 도식화 
+-b.Object-Oriented => Data Class등에 직접 접촉 가능 
+    -> Data & Method => 캡슐화 
+    -> 생산성 ++ 
+    -> UML Diagram - How
+       Class,Sequance(객체들 사이에서 주고 받는 메세지 ),UseCase(사용자 프로그램을 어떻게 사용할지 표현 Interface[설계도])
+-c.애자일 방법론???? 
+    -> Scrum: 짧게 짧게 하면서 진행상황 체크 
+
+3. 요구사항 분석 
+-기능적, 비기능적 요구사항 파악(보안*, 속도, 유지보장... )
+    ->(예시) 성능(초당 100건 처리) 보안(SSL 암호화) 확장성(사용자 10배 증가 대비)
+-수집 기법: interview, workshop, prototype, 
+            Usecase(사용자의 관점에서 시나리오 작성 - Free program )
+-요구사항 명세서 - in English 
+    ->MUST HAVE 1.clarity 2.consistency 3.completeness 4.traceability
+
+4. 소프트 웨어 설계 
+-내일 응집도 실습 

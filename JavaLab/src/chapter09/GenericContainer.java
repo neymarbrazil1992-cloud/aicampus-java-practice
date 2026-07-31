@@ -28,7 +28,12 @@ public class GenericContainer <T> {
         }
         System.out.println();
     }
+/*<E extends Number> 이 메서드만 쓰는 독립적인 타입 파라미터 E를 선언.
+    "E"는 아무거나 말고, Number를 상속받은 타입만 허용 - Integer, Double, Long 등 
+: double sum(E[] numbers -> E타입 배열을 받아서, double을 리턴하는 메서드 
 
+
+*/
     public <E extends Number> double sum(E[] numbers) {
         double total = 0;
         for (E number : numbers) {
