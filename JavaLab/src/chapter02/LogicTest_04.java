@@ -1,5 +1,7 @@
 package chapter02;
 
+
+
 public class LogicTest_04 {
     public static void main(String[] args) {
         
