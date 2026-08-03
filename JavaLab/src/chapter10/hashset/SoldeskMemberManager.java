@@ -1,6 +1,7 @@
 package chapter10.hashset;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class SoldeskMemberManager {
     
@@ -23,9 +24,19 @@ public class SoldeskMemberManager {
             System.out.println(member.getMemberID()+"는(은) 이미 존재하는 아아디 입니다.");
         }
 
+        
+
     }//addMember
 
-    
+    //출력 
+
+    public void showALLMember() {
+
+        for(SoldeskMember member : members){
+            System.out.println(member);
+        }
+
+    } //showallmember
     
 
     

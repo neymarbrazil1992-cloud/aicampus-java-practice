@@ -1,0 +1,62 @@
+package chapter10.treeSet;
+
+public class Student implements Comparable<Student> {
+   
+    // 멤버 변수
+    private String name;
+    private int score;
+
+    public Student() {
+
+    }
+   
+
+    public Student(String name, int score) {
+        this.name = name;
+        this.score = score;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", score=" + score + "]";
+    }
+
+
+    @Override
+    public int compareTo(Student other) {
+        
+        // return Integer.compare(this.score, other.score); -> 오름차순
+        return Integer.compare(this.score, other.score)*-1; //-> 내림차순 
+    
+    }
+
+    
+
+
+   
+
+    
+    
+
+    
+
+
+}//class

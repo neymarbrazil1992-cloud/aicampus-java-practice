@@ -32,6 +32,33 @@ public class SoldeskMember {
     }
 
     
+    @Override
+	public int hashCode() {
+		return memberId; //1001
+	}
+
+
+    @Override//둘중에 하나라도 똑같은게 있으면 ID를 바꿈으로써 중복을 제어
+    public boolean equals(Object obj) {
+        if (obj instanceof SoldeskMember){
+            SoldeskMember member = (SoldeskMember) obj;
+            return this.memberId == member.memberId || this.memberName.equals(member.memberName);
+        }
+        return false;
+    }
+
+    
+
+
+    @Override
+    public String toString() {
+        
+        return memberName + "회원님의 아이디는 " + memberId + "입니다.";
+    }
+
+    
+
+    
 
     
     

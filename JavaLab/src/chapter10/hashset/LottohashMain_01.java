@@ -8,7 +8,7 @@ public class LottohashMain_01 {
     public static void main(String[] args) {
         
         HashSet<Integer> lotto = new HashSet<Integer>();
-        // HashSet -> 중복을 자동으로 막아준다
+        // HashSet -> 중복을 자동으로
 
         while (true) {
 
