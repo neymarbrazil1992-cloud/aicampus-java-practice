@@ -44,3 +44,13 @@ while (it.hasNext()) {
 LinkedList 
 1|A  2|B   3|C   4|D   5|E  => indexNo.를 갖고 들어간다
 -> Data가 그 다음 인덱스를 가지고 있다 
+
+자료 구조
+Collection : ArrayList, LinkedList, Queue, Stack
+     => "데이터를 담는 방식의 선택지"
+     => 상황에 따라 다른 구조를 써야 성능이 훨씬 좋아진다
+
+ArrayList : 인덱스로 즉시 접근 - 몇번째 데이터인지 알면 바로 꺼낼수 있다
+LinkedList : 중간 삽입/ 삭제가 빠름 : 기차칸 - 중간에 칸 하나 끼워 넣기 쉬움 
+Queue : 순서 보장(먼저 온 게 먼저 처리) : 
+Stack : 최근 것 부터 처리 

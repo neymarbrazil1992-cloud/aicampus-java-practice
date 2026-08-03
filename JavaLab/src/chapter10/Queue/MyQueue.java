@@ -19,7 +19,7 @@ public class MyQueue {
             return null;
             //==> 예외 처리 
         }
-         return (arrayQueue.remove(len)); //Queue가 없으면 이렇게 customize 
+         return (arrayQueue.remove(0)); //Queue가 없으면 이렇게 customize 
 
     }//deQueue
 
@@ -28,7 +28,7 @@ public class MyQueue {
         return "MyQueue [arrayQueue=" + arrayQueue + "]";
     }
 
-    
+      
 
     
     
