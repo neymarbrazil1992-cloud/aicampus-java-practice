@@ -1,8 +1,7 @@
-package chapter11;
+package chapter11.io;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.nio.Buffer;
 import java.util.Scanner;
 
 public class WriteToFile_01 {
