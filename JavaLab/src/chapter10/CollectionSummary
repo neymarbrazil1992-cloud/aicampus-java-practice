@@ -1,12 +1,13 @@
 
 Collection(자바2-기능) : Generic
  | 
-(상속)
+(상속) "부모가 자식에게 나눠줌" 
  ├── List(부모):가 앞에옴            List<String>student = new ArrayList
  │    ├── ArrayList(!!일반적)
  │    ├── LinkedList ->Linked 배열 알고리즘 : 단순 반복 작업에 빠름
  │    ├── Stack
  │    └── Vector
+ |    ----Queue
  │
  └── Set(부모)
       ├── HashSet-중복 점검
@@ -54,3 +55,5 @@ ArrayList : 인덱스로 즉시 접근 - 몇번째 데이터인지 알면 바로
 LinkedList : 중간 삽입/ 삭제가 빠름 : 기차칸 - 중간에 칸 하나 끼워 넣기 쉬움 
 Queue : 순서 보장(먼저 온 게 먼저 처리) : 
 Stack : 최근 것 부터 처리 
+
+Supereme Framework? 
