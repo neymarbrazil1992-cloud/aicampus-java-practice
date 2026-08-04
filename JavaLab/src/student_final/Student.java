@@ -40,7 +40,14 @@ public class Student {
         return score;
     }
 
+    @Override
+    public String toString() {
+        return "Student [id=" + id + ", name=" + name + ", score=" + score + "]";
+    }
+
     //getter
+
+    
 
     
     
