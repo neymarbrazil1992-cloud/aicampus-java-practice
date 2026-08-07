@@ -23,18 +23,18 @@ public class lotto {
                    
                     if (lotto[i]==lotto[j]){
                    i--;
-        //                 continue outer; //분기점으로 이동 
-        //             }//if
+                        continue outer; //분기점으로 이동 
+                    }//if
                     
-        //         }//in for
+                }//in for
 
-        //         System.out.print(lotto[i] + " ");
-        //     }//for
+                System.out.print(lotto[i] + " ");
+            }//for
 
-        //     cnt++;
-        //     System.out.println();
+            cnt++;
+            System.out.println();
             
-        // }//while
+        }//while
 
         int number;
         int cnt = 0;

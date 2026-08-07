@@ -1,7 +1,6 @@
 package student_final;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -54,7 +53,7 @@ public class StudentService {
     //학번으로 삭제 
 
     public boolean removeStudent(String id){
-        if(studentMap.containsKey(id)){
+        if(!studentMap.containsKey(id)){
             return false; // 존재여부 
         }
         

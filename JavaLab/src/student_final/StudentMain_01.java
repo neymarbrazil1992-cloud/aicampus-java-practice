@@ -1,5 +1,6 @@
 package student_final;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class StudentMain_01 {
@@ -42,13 +43,10 @@ public class StudentMain_01 {
                 }
 
         }while(menu != 0);
-        
-       
-        
-
-
+    
 
     }//main
+
 
     static void printMenu() {
 
@@ -80,7 +78,7 @@ public class StudentMain_01 {
 
         boolean success = service.addStudent(id, name, score);
         if(success){
-            System.out.println("추가 완료: " + service.findStudent(id));
+            System.out.println("추가 완료: " + service.findStudent(id) + "\n이 등록되었습니다.");
         }else{
             System.out.println("이미 존재하는 학번입니다.");
         }
@@ -90,19 +88,64 @@ public class StudentMain_01 {
 
         System.out.print("학번 입력 >> ");
         String id = sc.next();
-        
-
-        
+         
+        boolean success = service.removeStudent(id);
+        if(success){
+            System.out.println("삭제 완료: ");
+        }else{
+            System.out.println("존재하지 않는 학번 입니다.");
+        }
+              
 
     }
 
     static void searchStudent(){
+        System.out.print("학번 입력 >> ");
+        String id = sc.next();
+
+        Student found = service.findStudent(id);
+        if (found != null) {
+            System.out.println(found);
+        }else {
+            System.out.println("존재하지 않는 학번입니다.");
+        }
     }
+
+
     static void printAll(){
+         if (service.isEmpty()) {
+            System.out.println("등록된 학생이 없습니다.");
+            return;
+         }
+       
+         System.out.println("---전체 학생 목록(등록순) ---");
+         for (Student s : service.getAllStudents()){
+            System.out.println(s);
+         }
     }
+
+    
     static void printSortedByScore(){
+        if (service.isEmpty()){
+            System.out.println("등록된 학생이 없습니다.");
+            return;
+        }
+
+        List<Student> sorted = service.getStudentsSortedByScore();
+        System.out.println("--- 점수 높은 순 정렬 ---");
+        int rank = 1;
+        for (Student s : sorted) {
+            System.out.println(rank++ + "등. " + s);
+        } 
+
+
+        // for (Student s : service.getStudentsSortedByScore()){
+        //     System.out.println(s);
+        // }   
     }
+
     static void printAverage(){
+        System.out.println("평균 점수 : " + service.getAverageScore());
     }
 
 

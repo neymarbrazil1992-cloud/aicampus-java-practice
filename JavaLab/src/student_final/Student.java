@@ -28,6 +28,7 @@ public class Student {
         this.score = score;
     }
 
+    //getter or setter  생성자를 통해서 멤버변수를 초기화하는 이유는 -> Database 한테 전달할 목적 
     public String getId() {
         return id;
     }
@@ -42,19 +43,21 @@ public class Student {
 
     @Override
     public String toString() {
-        return "학생 [id=" + id + ", name=" + name + ", score=" + score + "].";
-        
+        return String.format(
+            "학번: %s, 이름: %s, 점수: %d",
+            id,name,score
+        );        
     }
 
-    //getter
+    // @Override
+    // public String toString() {
+    //     return String.format(
+    //     "학번: %s, 이름: %s, 점수: %d",
+    //     id,name,score        
+    //     );                   
+    // }
 
     
-
-    
-    
-    
-    
-
     
     
 
